@@ -51,3 +51,55 @@ ul {
 img {
   max-width: 100%;
 }
+
+/* Class */
+
+.container {
+  position: relative;
+  display: block;
+  padding: 4rem;
+}
+
+.logo {
+}
+
+/* header */
+header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  line-height: 1.8rem;
+}
+
+header ul {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+header ul li {
+  padding: 0 4rem;
+}
+
+header ul li a {
+  color: var(--black);
+}
+
+header ul li:last-child {
+  color: var(--blue);
+  font-weight: 700;
+}
+
+.header ul li a,
+.active {
+  color: var(--blue);
+}
+
+.active::before {
+  position: absolute;
+  content: '';
+  background-color: var(--blue);
+  width: 150px;
+  height: 3px;
+  top: 0;
+}
