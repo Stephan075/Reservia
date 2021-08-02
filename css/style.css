@@ -1,0 +1,53 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* variables */
+:root {
+  --blue: #0065fc;
+  --blue-light: #deebff;
+  --gray: #f2f2f2;
+  --dark: #090909;
+}
+
+/* general */
+
+:root {
+  font-size: 62.5%; /*10px*/
+}
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: var(--dark);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 1rem 0;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+a {
+  font-size: 1.6rem;
+  color: var(--dark);
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
