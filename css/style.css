@@ -31,7 +31,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 1rem 0;
+  margin: 1rem 0 1rem 0;
 }
 
 p {
@@ -54,12 +54,34 @@ img {
 
 /* Class */
 
+.text-primary {
+  color: var(--blue);
+}
+
+.text-gray {
+  color: var(--gray);
+}
+
+main {
+  display: block;
+  /* width: 900px; */
+  /* margin: auto; */
+  margin: 0rem 4rem 4rem;
+}
+
 .container {
   display: block;
-  max-width: 1200px;
-  margin: 0rem 4rem 4rem;
-
   /* margin: auto; */
+}
+
+.stars-container {
+  display: flex;
+  color: var(--gray);
+}
+
+.title {
+  font-weight: 700;
+  font-size: 2.4rem;
 }
 
 /* header */
@@ -70,7 +92,6 @@ img {
 }
 
 header {
-  margin: 0rem 4rem;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -192,4 +213,92 @@ header nav a:last-child {
   margin-left: 1rem;
   justify-content: center;
   align-items: center;
+}
+
+/* hébergements */
+.accommodation {
+}
+
+/* conteneur */
+.accommodation-bloc {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+  margin-top: 3rem;
+}
+
+.bloc {
+  background: var(--gray);
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.bloc .title-and-i {
+  display: flex;
+}
+
+.title-and-i i {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  font-size: 26px;
+  flex-flow: row wrap;
+}
+
+.accommodation-available {
+  flex: 3;
+  margin-right: 2rem;
+  padding: 4rem;
+}
+
+.accommodation-list {
+  display: flex;
+  margin-top: 2rem;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.accommodation-elem {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  width: 375px;
+  margin-bottom: 3rem;
+}
+
+.accommodation-elem-img {
+  border-radius: 20px 20px 0 0;
+  border: 5px solid white;
+  border-bottom: 0;
+  overflow: hidden;
+}
+
+.accommodation-elem-img img {
+  object-fit: cover;
+  height: 120px;
+  width: 100%;
+}
+
+/* hébergements populaire */
+.accommodation-popular {
+  flex: 1;
+  margin-left: 2rem;
+  padding: 4rem;
+}
+
+.accommodation-elem-text {
+  margin: 0 1rem 1rem 2rem;
+}
+
+.accommodation-elem-text .house-name,
+.accommodation-elem-text span {
+  font-weight: 700;
+}
+
+/*  */
+.show-more {
+  font-weight: 700;
 }
