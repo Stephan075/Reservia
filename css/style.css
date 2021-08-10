@@ -84,6 +84,14 @@ main {
   font-size: 2.4rem;
 }
 
+.card {
+  background: white;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  margin-bottom: 3rem;
+}
+
 /* header */
 .logo {
   display: flex;
@@ -156,6 +164,10 @@ header nav a:last-child {
   font-weight: 700;
 }
 
+.search-input:focus {
+  outline: 0;
+}
+
 .search-button {
   border: none;
   border-radius: 0 14px 14px 0;
@@ -174,6 +186,10 @@ header nav a:last-child {
   margin-bottom: 3rem;
 }
 
+.filters > h2 {
+  margin-right: 1.5rem;
+}
+
 .filters-list {
   display: flex;
 }
@@ -183,6 +199,14 @@ header nav a:last-child {
   border: solid 2px #e2e2e2;
   padding: 0 20px 0 0;
   border-radius: 50px;
+  margin-right: 1rem;
+  transition: all 0s ease;
+}
+
+.filters ul li:hover {
+  transition-duration: 0.25s;
+  cursor: pointer;
+  background-color: var(--blue);
 }
 
 .icon-filter {
@@ -191,6 +215,7 @@ header nav a:last-child {
   padding: 18px;
   border-radius: 50px;
   margin-right: 15px;
+  margin-left: -7px;
 }
 
 .info {
@@ -231,6 +256,7 @@ header nav a:last-child {
   background: var(--gray);
   border-radius: 25px;
   overflow: hidden;
+  padding: 4rem;
 }
 
 .bloc .title-and-i {
@@ -248,7 +274,6 @@ header nav a:last-child {
 .accommodation-available {
   flex: 3;
   margin-right: 2rem;
-  padding: 4rem;
 }
 
 .accommodation-list {
@@ -259,14 +284,9 @@ header nav a:last-child {
 }
 
 .accommodation-elem {
-  background: white;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
-  border-radius: 20px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   width: 375px;
-  margin-bottom: 3rem;
 }
 
 .accommodation-elem-img {
@@ -282,13 +302,6 @@ header nav a:last-child {
   width: 100%;
 }
 
-/* hébergements populaire */
-.accommodation-popular {
-  flex: 1;
-  margin-left: 2rem;
-  padding: 4rem;
-}
-
 .accommodation-elem-text {
   margin: 0 1rem 1rem 2rem;
 }
@@ -298,7 +311,57 @@ header nav a:last-child {
   font-weight: 700;
 }
 
-/*  */
+/* Afficher plus */
 .show-more {
+  font-weight: 700;
+}
+
+/* hébergements populaire */
+.accommodation-popular {
+  flex: 1;
+  margin-left: 2rem;
+}
+
+.accommodation-popular .title-and-i {
+  justify-content: space-between;
+}
+
+.accommodation-popular .title-and-i i {
+  margin: 1rem 0 1rem 0;
+}
+
+.accommodation-popular-list {
+  margin-top: 0.5rem;
+}
+
+.accommodation-popular-elem {
+}
+.accommodation-popular-elem a {
+  display: flex;
+}
+
+.accommodation-popular-elem-img {
+  display: flex;
+  border-radius: 20px 0 0 20px;
+  overflow: hidden;
+  border: 5px solid white;
+  width: 50%;
+  height: 150px;
+}
+
+.accommodation-popular-elem-img img {
+  object-fit: cover;
+  width: 150px;
+}
+
+.accommodation-popular-elem-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.accommodation-popular-elem-text .house-name,
+.accommodation-popular-elem-text span {
   font-weight: 700;
 }
