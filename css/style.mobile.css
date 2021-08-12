@@ -30,9 +30,21 @@
   padding: 2rem;
 }
 
+/* main */
+main {
+  display: block;
+  /* width: 900px; */
+  /* margin: auto; */
+  margin: 2rem;
+}
+
+/* search */
 .search {
   overflow: auto;
   padding: 2rem 0;
+}
+.search-input {
+  width: 270px;
 }
 
 .search .search-button {
@@ -53,4 +65,21 @@
 .search-button-mobile .fa-search {
   color: white;
   font-size: 2rem;
+}
+
+/* filters */
+.filters {
+  margin: 1rem;
+}
+
+.filter-elem {
+  transition: none;
+  margin: 0;
+  margin-bottom: 1rem;
+  margin-right: 2rem;
+}
+
+/* info */
+.info {
+  margin-top: 2rem;
 }

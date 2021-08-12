@@ -430,3 +430,14 @@ footer {
 .footer-title {
   margin-bottom: 2rem;
 }
+
+/*  */
+
+@media screen and (max-width: 950px) {
+  .filters-list {
+    flex-flow: row wrap;
+  }
+  .filters-list li {
+    margin: 0.6rem;
+  }
+}
