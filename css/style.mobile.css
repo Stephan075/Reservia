@@ -1,0 +1,27 @@
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    'logo navbar-sign-up'
+    'navbar-accomodation navbar-activities';
+}
+.navbar img {
+  grid-area: logo;
+}
+.navbar .accomodation {
+  grid-area: navbar-accomodation;
+  flex-direction: column-reverse;
+}
+.navbar .activities {
+  grid-area: navbar-activities;
+  flex-direction: column-reverse;
+}
+.navbar .activities .underline-effect {
+  background-color: var(--gray);
+}
+.navbar .sign-up {
+  grid-area: navbar-sign-up;
+  display: flex;
+  align-items: flex-end;
+}

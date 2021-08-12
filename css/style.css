@@ -90,44 +90,66 @@ main {
   border-radius: 20px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   margin-bottom: 3rem;
+  /* margin-right: 3rem; */
+}
+
+.section-bloc {
+  margin: 4rem 0;
 }
 
 /* header */
-.logo {
+.navbar {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
+  grid-template-areas: 'logo . accomodation activities sign-up';
+}
+
+/* grid template */
+.navbar .logo {
+  grid-area: logo;
+}
+.navbar .accomodation {
+  grid-area: accomodation;
+}
+.navbar .activities {
+  grid-area: activities;
+}
+.navbar .sign-up {
+  grid-area: sign-up;
+}
+
+.navbar .navbar-link {
   display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-header {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  line-height: 1.8rem;
+.navbar .navbar-link .underline-effect {
+  width: 100%;
+  height: 0.3rem;
+  background: white;
 }
 
-header nav {
-  display: flex;
-  flex-flow: row nowrap;
+.navbar .accomodation > .underline-effect {
+  background: var(--blue);
 }
 
-header nav a {
-  padding: 50px 4rem;
-  color: var(--black);
+.navbar a {
+  padding: 2.5rem;
 }
 
-header nav a:last-child {
+.active-link > a {
   color: var(--blue);
+}
+
+.sign-up > a,
+.navbar .sign-up {
   font-weight: 700;
+  color: var(--blue);
 }
 
 /* end-header */
-
-.header nav a,
-.active {
-  color: var(--blue);
-  border-top: 3px solid var(--blue);
-}
 
 /* search */
 .search {
@@ -249,7 +271,7 @@ header nav a:last-child {
   display: flex;
   flex-flow: row nowrap;
   align-items: stretch;
-  margin-top: 3rem;
+  /* margin-top: 3rem; */
 }
 
 .bloc {
@@ -364,4 +386,44 @@ header nav a:last-child {
 .accommodation-popular-elem-text .house-name,
 .accommodation-popular-elem-text span {
   font-weight: 700;
+}
+
+/* activities */
+.activities {
+}
+
+.activities_gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer {
+  background: var(--gray);
+  /* display: flex;
+  justify-items: center;
+  align-items: center; */
+}
+
+.footer-blocs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-bloc {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-bloc:last-child {
+  margin-right: 20%;
+}
+
+.footer-link-item {
+  margin-bottom: 1rem;
+}
+
+.footer-title {
+  margin-bottom: 2rem;
 }
