@@ -136,7 +136,7 @@ main {
 }
 
 .navbar a {
-  padding: 2.5rem;
+  padding: 4rem;
 }
 
 .active-link > a {
@@ -153,8 +153,11 @@ main {
 
 /* search */
 .search {
-  overflow: auto;
-  /* padding: 2rem 0; */
+  overflow: hidden;
+}
+
+.search-button-mobile {
+  display: none;
 }
 
 .search-content {
