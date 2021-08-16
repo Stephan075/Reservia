@@ -116,6 +116,29 @@ main {
   width: 100%;
 }
 
+/* activities */
+.activity {
+  margin: 2rem;
+}
+
+.activitie {
+  margin-bottom: 3rem;
+}
+
+.activitie img {
+  height: 17.5rem;
+}
+.activities-container {
+  flex-flow: column nowrap;
+  height: 100%;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.bloc-activities {
+  width: 100%;
+}
+
 /* footer */
 .footer-blocs {
   flex-direction: column;
