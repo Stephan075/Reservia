@@ -1,0 +1,39 @@
+:root {
+  background: red;
+}
+
+/* hébergements */
+.bloc {
+  margin-top: 2rem;
+  border-radius: 0;
+}
+.accommodation-bloc {
+  flex-flow: column nowrap;
+  align-items: stretch;
+  /* margin-top: 3rem; */
+}
+.accommodation-available {
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+.accommodation-list {
+  flex-flow: column nowrap;
+}
+
+.accommodation-elem {
+  width: 100%;
+}
+
+.accommodation-elem-img {
+  height: 30rem;
+}
+
+.accommodation-elem-img img {
+  height: 100%;
+}
+
+/* Les plus populaires */
+.accommodation-popular {
+  margin: 0;
+}

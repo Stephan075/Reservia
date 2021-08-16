@@ -1,3 +1,10 @@
+:root {
+  background: orange;
+}
+/* style */
+.section-bloc {
+  margin: 0;
+}
 .navbar {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -33,15 +40,15 @@
 /* main */
 main {
   display: block;
-  /* width: 900px; */
-  /* margin: auto; */
   margin: 2rem;
+  margin: 0;
 }
 
 /* search */
 .search {
   overflow: auto;
   padding: 2rem 0;
+  margin: 2rem;
 }
 .search-input {
   width: 270px;
@@ -82,4 +89,34 @@ main {
 /* info */
 .info {
   margin-top: 2rem;
+}
+
+/* Hébergements */
+.accommodation-bloc {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+}
+.accommodation-available {
+  margin-right: 0;
+  order: 2;
+  background: white;
+}
+
+.bloc {
+  margin: 1rem 0;
+  border-radius: 0;
+}
+
+.accommodation-list {
+  flex-flow: column;
+}
+
+.accommodation-elem {
+  width: 100%;
+}
+
+/* footer */
+.footer-blocs {
+  flex-direction: column;
 }
