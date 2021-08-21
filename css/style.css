@@ -128,22 +128,19 @@ main {
   flex-direction: column;
 }
 
-.navbar .navbar-link .underline-effect {
+.navbar .navbar-link-hover a {
   width: 100%;
-  height: 0.3rem;
-  background: white;
+  text-align: center;
+  border-top: 0.3rem solid transparent;
+  transition-duration: 0.2s;
 }
-
-.navbar .accomodation > .underline-effect {
-  background: var(--blue);
+.navbar .navbar-link-hover a:hover {
+  border-top: 0.3rem solid var(--blue);
+  color: var(--blue);
 }
 
 .navbar a {
   padding: 4rem 0;
-}
-
-.active-link > a {
-  color: var(--blue);
 }
 
 .sign-up > a,
@@ -151,8 +148,6 @@ main {
   font-weight: 700;
   color: var(--blue);
 }
-
-/* end-header */
 
 /* search */
 .search {

@@ -15,15 +15,28 @@
 }
 .navbar .accomodation {
   grid-area: navbar-accomodation;
-  flex-direction: column-reverse;
 }
+
+.navbar .navbar-link-hover a {
+  border-top: 0;
+}
+
+.navbar > .accomodation > a {
+  border-bottom: 3px solid transparent;
+}
+.navbar > .activities > a {
+  border-bottom: 3px solid var(--gray);
+}
+
+.navbar .navbar-link-hover a:hover {
+  border-top: 0;
+  border-bottom: 0.3rem solid var(--blue);
+}
+
 .navbar .activities {
   grid-area: navbar-activities;
-  flex-direction: column-reverse;
 }
-.navbar .activities .underline-effect {
-  background-color: var(--gray);
-}
+
 .navbar .sign-up {
   grid-area: navbar-sign-up;
   display: flex;
